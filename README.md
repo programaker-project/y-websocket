@@ -9,6 +9,12 @@ The Websocket Provider is a solid choice if you want a central source that handl
 * Supports cross-tab communication. When you open the same document in the same browser, changes on the document are exchanged via cross-tab communication ([Broadcast Channel](https://developer.mozilla.org/en-US/docs/Web/API/Broadcast_Channel_API) and [localStorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage) as fallback).
 * Supports exchange of awareness information (e.g. cursors).
 
+## Changes from main branch
+
+This repository forks [y-websocket](https://github.com/yjs/y-websocket) to authenticate with against a [PrograMaker](https://gitlab.com/programaker-project/programaker-core) backend.
+
+For this to work, the environment variable `API_HOST` has to be set to the backend's URL (for example `http://internal-backend-node:8888`).
+
 ## Quick Start
 
 ### Client Code:
