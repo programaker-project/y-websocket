@@ -11,6 +11,7 @@
     "url": "https://github.com/sponsors/dmonad"
   },
   "scripts": {
+    "start-with-horrible-hack": "sh ./horrible-hack/prepare.sh && sh ./horrible-hack/keeper.sh & node ./bin/server.js",
     "start": "node ./bin/server.js",
     "dist": "rm -rf dist && rollup -c && tsc",
     "lint": "standard && tsc",
